@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[x11names, rgb]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{snakes,arrows,shapes}
+\usepackage{amsmath}
+%
+%
+
+%
+
+%
+
+\begin{document}
+\pagestyle{empty}
+%
+%
+%
+
+\enlargethispage{100cm}
+% Start of code
+\begin{tikzpicture}[>=latex',line join=bevel,]
+%%
+\node (1) at (297bp,21.092bp) [draw,ellipse] {\begin{matrix}N, 0\\State $1$ \end{matrix}};
+  \node (0) at (387bp,21.092bp) [draw,ellipse] {\begin{matrix}N-1, 0\\State $0$ \end{matrix}};
+  \node (3) at (117bp,21.092bp) [draw,ellipse] {\begin{matrix}N, n-1\\State $n$ \end{matrix}};
+  \node (2) at (207bp,21.092bp) [draw,ellipse] {\begin{matrix}N, n-2\\State $n-1$ \end{matrix}};
+  \node (4) at (27bp,21.092bp) [draw,ellipse] {\begin{matrix}N, n\\State $n+1$ \end{matrix}};
+  \draw [->,ultra thick] (1) ..controls (332.03bp,21.092bp) and (340.97bp,21.092bp)  .. (0);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (342bp,29.092bp) node {$N\lambda};
+  \draw [->,ultra thick] (2) ..controls (180.27bp,2.6357bp) and (169.87bp,-1.0916bp)  .. (160bp,1.0916bp) .. controls (155.75bp,2.0318bp) and (151.42bp,3.4368bp)  .. (3);
+  \draw (162bp,9.0916bp) node {$2\mu$};
+  \draw [->,ultra thick] (2) ..controls (242.03bp,21.092bp) and (250.97bp,21.092bp)  .. (1);
+  \draw (252bp,29.092bp) node {$N\lambda};
+  \draw [->,ultra thick] (3) ..controls (152.03bp,21.092bp) and (160.97bp,21.092bp)  .. (2);
+  \draw (162bp,29.092bp) node {$N\lambda};
+  \draw [->,ultra thick] (3) ..controls (90.271bp,2.6357bp) and (79.871bp,-1.0916bp)  .. (70bp,1.0916bp) .. controls (65.749bp,2.0318bp) and (61.42bp,3.4368bp)  .. (4);
+  \draw (72bp,9.0916bp) node {$\mu$};
+  \draw [->,ultra thick] (0) ..controls (360.27bp,2.6357bp) and (349.87bp,-1.0916bp)  .. (340bp,1.0916bp) .. controls (335.75bp,2.0318bp) and (331.42bp,3.4368bp)  .. (1);
+  \draw (342bp,9.0916bp) node {$(n+1)\mu$};
+  \draw [->,ultra thick] (4) ..controls (62.028bp,21.092bp) and (70.967bp,21.092bp)  .. (3);
+  \draw (72bp,29.092bp) node {$N\lambda};
+  \draw [->,ultra thick] (1) ..controls (270.27bp,2.6357bp) and (259.87bp,-1.0916bp)  .. (250bp,1.0916bp) .. controls (245.75bp,2.0318bp) and (241.42bp,3.4368bp)  .. (2);
+  \draw (252bp,9.0916bp) node {};
+%
+\end{tikzpicture}
+% End of code
+
+%
+\end{document}
+%
+
+
+

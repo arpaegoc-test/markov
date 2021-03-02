@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[x11names, rgb]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{snakes,arrows,shapes}
+\usepackage{amsmath}
+%
+%
+
+%
+
+%
+
+\begin{document}
+\pagestyle{empty}
+%
+%
+%
+
+\enlargethispage{100cm}
+% Start of code
+\begin{tikzpicture}[>=latex',line join=bevel,]
+%%
+\node (11) at (27bp,162bp) [draw,draw=none] { };
+  \node (13) at (315bp,18bp) [draw,draw=none] {};
+  \node (12) at (99bp,90bp) [draw,draw=none] { };
+  \node (46) at (243bp,90bp) [draw,draw=none] { };
+  \node (1) at (27bp,18bp) [draw,ellipse] {$\begin{matrix}1 \\ Non-fire\end{matrix}$};
+  \node (3) at (135bp,162bp) [draw,ellipse] {$\begin{matrix}3 \\ Vigorous\end{matrix}$};
+  \node (2) at (27bp,90bp) [draw,ellipse] {$\begin{matrix}2 \\ Sustained\end{matrix}$};
+  \node (5) at (279bp,162bp) [draw,ellipse] {$\begin{matrix}5 \\ Remote\end{matrix}$};
+  \node (4) at (171bp,90bp) [draw,ellipse] {$\begin{matrix}4 \\ Interactive\end{matrix}$};
+  \node (6) at (315bp,90bp) [draw,ellipse] {$\begin{matrix}6 \\ Full room\end{matrix}$};
+  \draw [<->,thick] (2) ..controls (70.829bp,119.22bp) and (91.183bp,132.79bp)  .. (3);
+  \draw [->,thick] (2) ..controls (27bp,63.941bp) and (27bp,54.892bp)  .. (1);
+  \draw [->,thick] (5) ..controls (291.87bp,136.27bp) and (297.06bp,125.88bp)  .. (6);
+  \draw [<->,thick] (4) ..controls (214.83bp,119.22bp) and (235.18bp,132.79bp)  .. (5);
+  \draw [<-,thick] (1) ..controls (138.7bp,18bp) and (213.34bp,18bp)  .. (13);
+  \draw [<-,thick] (13) ..controls (315bp,54.892bp) and (315bp,63.941bp)  .. (6);
+  \draw [<->,thick] (3) ..controls (151.38bp,129.24bp) and (154.68bp,122.64bp)  .. (4);
+%
+\end{tikzpicture}
+% End of code
+
+%
+\end{document}
+%
+
+
+

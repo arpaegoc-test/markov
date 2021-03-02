@@ -1,0 +1,29 @@
+\section{Markov reward model}
+\label{sec:MarkovRewardModel}
+The Markov reward model was initially developed keeping cost and financial models in mind. An example in the case of a multi-state repairable component was cited by \cite{Lisnianski2003}. The continuous-time Markov chain and the Markov transition rate matrix form the basis for this model. Additionally, each state transition and stay in a state is associated with a reward. This reward can be positive when it fetches profit or negative when it signifies losses. For developing a cost model, reward can be the associated loss due to a failure or the cost incurred on a repair or profit due to a sale. These rewards are arranged in a separate matrix which is similar in dimension to the transition rate matrix. Given these as the input along with the initial conditions, the total expected reward accumulated up to time $t$ can be obtained:
+\begin{align}
+\frac{dV_i(t)}{dt} = r_{ii} + \sum_{j=1, j \neq i}^{K}{a_{ij}r_{ij}} + \sum_{j=1}^{K}{a_{ij}V_j(t)}
+\label{eq:RewardEquationForm}
+\end{align}
+where,
+\begin{itemize}
+\item $V_i(t)$ is the total expected reward accumulated up to time $t$ with $i$ as the initial state  of the process at time 0,
+\item $r_{ii}$ is the reward per unit time for staying in state $i$,
+\item $r_{ij}$ is the reward for the transition from state $i$ to state $j$,
+\item $a_{ij}$ is the $(i,j)th$ element of the transition rate matrix.
+\end{itemize}
+
+Equation \ref{eq:RewardEquationForm} can be written in a matrix form as:
+\begin{align}
+\frac{d}{dt} \pmb{V(t) = u + aV(t)}
+\label{eq:RewardMatrixForm}
+\end{align}
+where,
+\begin{align}
+u_i = r_{ii} + \sum_{j=1, j \neq i}^{K}{a_{ij}r_{ij}} 
+\label{eq:UInRewardEqn}
+\end{align}
+
+The above system can be solved with $V_i(0)=0$ for all $i$ as the initial condition. Once solved, $V_i(t)$ with $i$ as the initial state yields the required average reward accumulated up to time $t$.
+
+

@@ -1,0 +1,104 @@
+\begin{thebibliography}{17}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Al-Dabbagh and Lu(2010)}]{AlDabbagh20101202}
+Al-Dabbagh, A.~W., Lu, L., 2010. Reliability modeling of networked control
+  systems using dynamic flowgraph methodology. Reliability Engineering \&
+  System Safety 95~(11), 1202 -- 1209.
+
+\bibitem[{Aldemir et~al.(2010)Aldemir, Guarro, Mandelli, Kirschenbaum, Mangan,
+  Bucci, Yau, Ekici, Miller, Sun, and Arndt}]{Aldemir20101011}
+Aldemir, T., Guarro, S., Mandelli, D., Kirschenbaum, J., Mangan, L., Bucci, P.,
+  Yau, M., Ekici, E., Miller, D., Sun, X., Arndt, S., 2010. Probabilistic risk
+  assessment modeling of digital instrumentation and control systems using two
+  dynamic methodologies. Reliability Engineering \& System Safety 95~(10), 1011
+  -- 1039.
+
+\bibitem[{Aldemir et~al.(2006)Aldemir, Miller, Stovsky, Kirschenbaum, Bucci,
+  Fentiman, and Mangan}]{NUREG6901}
+Aldemir, T., Miller, D., Stovsky, M., Kirschenbaum, J., Bucci, P., Fentiman,
+  A.~W., Mangan, L., 2006. {NUREG/CR-6901: Current state of reliability
+  modeling methodologies for digital Systems and their acceptance criteria for
+  Nuclear power plant assessments}. Tech. rep., Washington, DC, US Nuclear
+  Regulatory Commission.
+
+\bibitem[{Aldemir et~al.(2007)Aldemir, Stovsky, Kirschenbaum, Mandelli, ,
+  Bucci, Mangan, Miller, Sun, Ekici, Guarro, Yau, Johnson, Elks, and
+  Arndt}]{NUREG6942}
+Aldemir, T., Stovsky, M., Kirschenbaum, J., Mandelli, D., , Bucci, P., Mangan,
+  L., Miller, D., Sun, X., Ekici, E., Guarro, S., Yau, M., Johnson, B., Elks,
+  C., Arndt, S., 2007. {NUREG/CR-6942:Dynamic Reliability Modeling of Digital
+  Instrumentation and Control Systems for Nuclear Reactor Probabilistic Risk
+  Assessments}. Tech. rep., Washington, DC, US Nuclear Regulatory Commission.
+
+\bibitem[{Chu et~al.(2010a)Chu, Martinez-Gurdi, Kuritzky, and Amri}]{Chu2010a}
+Chu, T., Martinez-Gurdi, G., Kuritzky, A., Amri, A., 2010a. International
+  experience with modeling digital systems in psas. In: Proc. of the 10th
+  International Probabilistic Safety Assessment \& Management Conference.
+  Seattle, Washington, USA.
+
+\bibitem[{Howard(1964)}]{HowardA}
+Howard, R.~A., 1964. System analysis of semi-markov processes(systems analysis
+  of semimarkov processes, expressing results in form of matrix flow graph).
+  IEEE transactions on military electronics 8, 114.
+
+\bibitem[{Howard(1971)}]{HowardB}
+Howard, R.~A., 1971. Dynamic Probabilistic Systems, vol. 1: Markov Models. John
+  Wiley and Sons, Inc., New York, USA.
+
+\bibitem[{Kleyner and Volovoi(2010)}]{Kleyner2010606}
+Kleyner, A., Volovoi, V., 2010. Application of petri nets to reliability
+  prediction of occupant safety systems with partial detection and repair.
+  Reliability Engineering \& System Safety 95~(6), 606 -- 613.
+
+\bibitem[{Kumar(2000)}]{Kumar2000}
+Kumar, D., 2000. Reliability maintenance and logistic support: a life cycle
+  approach. Springer, New York, U.S.A.
+
+\bibitem[{Laird and Brennan(2006)}]{Linda2006}
+Laird, L.~M., Brennan, M.~C., 2006. Software measurement and estimation: a
+  practical approach. John Wiley and Sons, NJ, U.S.A.
+
+\bibitem[{Lisnianski and Levitin(2003)}]{Lisnianski2003}
+Lisnianski, A., Levitin, G., 2003. Multi-state System Reliability: Assessment,
+  Optimization and Applications. World Scientific, Singapore.
+
+\bibitem[{Rao et~al.(2009)Rao, Gopika, Rao, Kushwaha, Verma, and
+  Srividya}]{DurgaRao2009872}
+Rao, K.~D., Gopika, V., Rao, V.~S., Kushwaha, H., Verma, A., Srividya, A.,
+  2009. Dynamic fault tree analysis using monte carlo simulation in
+  probabilistic safety assessment. Reliability Engineering \& System Safety
+  94~(4), 872 -- 883.
+
+\bibitem[{Shi et~al.(2010)Shi, Enzinna, Yang, and Blodgett}]{Shi2010}
+Shi, L., Enzinna, R., Yang, S., Blodgett, S., 2010. Probabilistic risk
+  assessments of digital i\&c in nuclear power plant. In: Proc. of the 10th
+  International Probabilistic Safety Assessment \& Management Conference.
+  Seattle, Washington, USA.
+
+\bibitem[{Veeramany and Pandey(2011{\natexlab{a}})}]{Veeramany2011NCCW}
+Veeramany, A., Pandey, M.~D., 2011{\natexlab{a}}. Reliability analysis of
+  nuclear component cooling water system using semi-markov process model.
+  Nuclear Engineering and Design. To appear, DOI:
+  10.1016/j.nucengdes.2011.01.040.
+
+\bibitem[{Veeramany and Pandey(2011{\natexlab{b}})}]{Veeramany2011}
+Veeramany, A., Pandey, M.~D., 2011{\natexlab{b}}. Reliability analysis of
+  nuclear piping system using semi-markov process model. Annals of Nuclear
+  Energy. In Press, Corrected Proof, DOI: 10.1016/j.anucene.2010.12.012.
+
+\bibitem[{Vineyard et~al.(1999)Vineyard, Amoako-Gyampah, and
+  Meredith}]{Vineyard1999139}
+Vineyard, M., Amoako-Gyampah, K., Meredith, J.~R., 1999. Failure rate
+  distributions for flexible manufacturing systems: An empirical study.
+  European Journal of Operational Research 116~(1), 139 -- 155.
+
+\bibitem[{Yau et~al.(1995)Yau, Guarro, and Apostolakis}]{Yau1995}
+Yau, M., Guarro, S., Apostolakis, G., 1995. Demonstration of the dynamic
+  flowgraph methodology using the titan ii space launch vehicle digital flight
+  control system. Reliability Engineering \& System Safety 49~(3), 335--353.
+
+\end{thebibliography}

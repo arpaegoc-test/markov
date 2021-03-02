@@ -1,0 +1,157 @@
+\appendix
+
+\section{Semi-Markov Model: 12 Transformers and 2 Spares}
+A system with two spares has four states in the model. The following system of integral equations has to be solved to obtain the state probabilities:
+\allowdisplaybreaks 
+\begin{align*}
+\phi_{00}(t) = &W_0(t) \\
+\phi_{10}(t) = &\int_0^t{ c_{10}(\tau)\phi_{00}(t-\tau) }d\tau +\int_0^t{ c_{12}(\tau)\phi_{20}(t-\tau) }d\tau \\
+\phi_{11}(t) = &W_1(t) + \int_0^t{ c_{12}(\tau)\phi_{21}(t-\tau) }d\tau \\
+\phi_{12}(t) = &\int_0^t{ c_{12}(\tau)\phi_{22}(t-\tau) }d\tau \\
+\phi_{13}(t) = &\int_0^t{ c_{12}(\tau)\phi_{23}(t-\tau) }d\tau \\
+\phi_{20}(t) = &\int_0^t{ c_{21}(\tau)\phi_{10}(t-\tau) }d\tau +\int_0^t{ c_{23}(\tau)\phi_{30}(t-\tau) }d\tau \\
+\phi_{21}(t) = &\int_0^t{ c_{21}(\tau)\phi_{11}(t-\tau) }d\tau +\int_0^t{ c_{23}(\tau)\phi_{31}(t-\tau) }d\tau \\
+\phi_{22}(t) = &W_2(t) + \int_0^t{ c_{21}(\tau)\phi_{12}(t-\tau) }d\tau +\int_0^t{ c_{23}(\tau)\phi_{32}(t-\tau) }d\tau \\
+\phi_{23}(t) = &\int_0^t{ c_{21}(\tau)\phi_{13}(t-\tau) }d\tau +\int_0^t{ c_{23}(\tau)\phi_{33}(t-\tau) }d\tau \\
+\phi_{30}(t) = &\int_0^t{ c_{32}(\tau)\phi_{20}(t-\tau) }d\tau \\
+\phi_{31}(t) = &\int_0^t{ c_{32}(\tau)\phi_{21}(t-\tau) }d\tau \\
+\phi_{32}(t) = &\int_0^t{ c_{32}(\tau)\phi_{22}(t-\tau) }d\tau \\
+\phi_{33}(t) = &W_3(t) + \int_0^t{ c_{32}(\tau)\phi_{23}(t-\tau) }d\tau \\
+\end{align*}
+Assuming that the system started in the best state with all transformers functioning and both the spares are available for ready replacement, the system failure probability is given by solving for $\phi_{30}(t)$.
+
+
+\section{Markov Reward Model: 12 transformers and 2 spares}
+In particular, the Markov state transition matrix corresponding to the Markov model of Figure \ref{fig:RewardStateSpace} for two spares is given by:
+\begin{align}
+a=
+\begin{bmatrix}
+-3\mu	 & 	3\mu	 & 	0	 & 	 0	\\
+N\lambda	 & 	-( N\lambda + 2\mu)	 & 	2\mu	 & 	0	\\
+0	 & 	N\lambda	 & 	-( N\lambda + \mu)	 & 	\mu	\\
+0	 & 	0	 & 	N\lambda	 & 	-N\lambda 
+\end{bmatrix}
+\end{align}
+and the corresponding reward matrix is:
+\begin{align}
+r=
+\begin{bmatrix}
+r_{00}	&		C_r		&		0		&		0		\\
+0				&		0			&		C_r	&		0		\\
+0				&		0			&		0		&		C_r	\\
+0				&		0			&		0		&		0
+\end{bmatrix}
+\end{align}
+
+The matrix function $\pmb{V(t)}$ in Equation \ref{eq:RewardMatrixForm} is a column matrix:
+\begin{align}
+\pmb{V(t)}=
+\begin{bmatrix}
+V_0(t)	&	V_1(t)	&	V_2(t)	&	V_3(t)
+\end{bmatrix}^T
+\end{align}
+and the matrix $\pmb{u}$ in Equation  \ref{eq:UInRewardEqn} is:
+\begin{align}
+\mathbf{u}=
+\begin{bmatrix}
+r_{00} \\
+0 \\
+0 \\
+0
+\end{bmatrix} + 
+\begin{bmatrix}
+3\mu C_r \\
+2\mu C_r \\
+\mu C_r \\
+0
+\end{bmatrix}
+\end{align}
+
+
+\section{Closed form solution for $W_i(t)$}
+
+In this appendix, it is proved that a semi-Markov process model's kernel can be
+entirely built using poly-Weibull distribution.
+
+Let transition from a state $i$ to a state $j$ follow a poly-Weibull distribution
+made of a mixture of $n$ Weibull distributions. If $n=1$, distribution
+is a regular Weibull distribution. 
+
+
+Consider a row $i$ whose entries represent  a competing risk situation, then for $1 \le j,k \le N$,
+
+
+$\int\limits_0^t {\displaystyle\sum\limits_j {c_{ij} (t)dt} }$
+\begin{align}
+=& \int\limits_0^t{\sum\limits_j {[f_{ij}(t)\prod\limits_{k\ne j}{(1-F_{ik}(t))}]} dt} \nonumber \\
+=&\int\limits_0^t {\sum\limits_j{[ \displaystyle\sum_{p=1}^{m_{ij}}(\lambda_{ijp} \gamma_{ijp}) (\lambda_{ijp}t)^{\gamma_{ijp}-1} e^{-\displaystyle\sum\limits_{k}\sum\limits_{q=1}^{m_{ik}}{(\lambda_{ikq}t)^{\gamma_{ikq}}}}   ]} dt} \nonumber \\
+=&-e^{-X} + 1
+\label{eqn:PolyWblIntegral}
+\end{align}
+where
+\begin{align}
+X =& \sum_{k}\sum_{q=1}^{m_{ik}}{(\lambda_{ikq}t)^{\gamma_{ikq}}}  \text{ so that} \nonumber \\
+dX =& \sum_k\displaystyle\sum_{q=1}^{m_{ik}}(\lambda_{ijq} \gamma_{ijq}) (\lambda_{ijq}t)^{\gamma_{ijq}-1}dt \nonumber
+\end{align}
+
+The $W_i(t)$ in Integral Equation \ref{CTMRE} based on Equation \ref{eq:staying} is computed as
+\begin{align}
+W_i(t) = 1-(\ref{eqn:PolyWblIntegral})  = e^{-X} = e^{-\displaystyle\sum_{k}\sum_{q=1}^{m_{ik}}{(\lambda_{ikq}t)^{\gamma_{ikq}}}}
+\label{eq:PolyWblStaying}
+\end{align}
+This simplified expression for $W_i(t)$ aids in fast computation of the state probabilities in the presence of
+numerous competing risk situations.
+It remains to plug-in both the matrices $C(t)$ and $W(t)$ and evaluate the state probabilities
+recursively using Equation \ref{MatMRE} by applying the trapezoidal rule in Equation \ref{TrapCTMRE}.
+
+
+
+\section{Implementation issues}
+\label{sec:PipingImplementation}
+
+Equation \ref{MatMRE} can be evaluated by direct numerical integration or using Laplace transforms method. Most distributions do not possess a closed form Laplace transform. \cite{Gulyas2007} in a thesis dissertation employed a transform approximation method (TAM) to evaluate the Laplace transform of Weibull distribution and then numerically evaluated its Laplace inversion. In this paper, we resort to the direct numerical integration technique since we assume that we do not know the degradation distribution beforehand.
+
+Equation \ref{eq:staying} is computationally expensive if the integral has to be evaluated for each $t$. Instead, it can be computed as a recurrence relation as follows:
+
+\begin{align}
+W_i(t_n)=\begin{cases}
+1 - \int_0 ^ {\Delta t} {w_i(t_n) dt} & n=1 \\
+W_i(t_{n-1}) -\int_{t_{n-1}}^{t_n} { w_i(t) dt}    & n > 1
+\end{cases}
+\end{align}
+
+
+Where, by trapezoidal rule, we have:
+
+\begin{align}
+\int_{t_{n-1}}^{t_n} {w_i(t)}dt = \frac{\Delta t}{2}\{  w_i(t_{n-1}) + w_i(t_n)  \} 
+\end{align}
+
+However, when all the failure/repair distributions follow Weibull distribution with scale $\lambda_{ik}$  and shape $\gamma_{ik}$, $W_i(t)$ reduces to a closed form as seen in the above Appendix:
+
+\begin{align}
+W_i(t) =  e^{-\sum\limits_{k}{(\lambda_{ik}t)^{\gamma_{ik}}}}
+\end{align}
+
+To solve the system of integral equations, \cite{Nunn1977} derived the following recurrence relation based on trapezoidal rule by distributing $t$ on a set of equally spaced points in the interval $[0,t]$:
+
+\begin{eqnarray}
+{\phi (t_n )} = [I - \frac{{\Delta t}}{2}C(0)]^{ - 1} [diag(W(t_n )) + \nonumber \\
+\Delta t\sum\limits_{k = 1}^n {C(t_k ){\phi (t_n  - t_k )}}  - \frac{{\Delta t}}{2}C(t_n ){\phi (0)}]
+\label{TrapCTMRE}
+\end{eqnarray}
+
+Where $\Delta t = t_n - t_{n-1}$. The solution is started with ${\phi(0)} = W(0) = I$.
+
+The convolution operation in the above equation involves repeated addition and multiplication of matrices thus slowing down the computations as $n$ grows. With sufficiently large storage space, the following technique for convolution improves the speed:
+
+\begin{align}
+\sum\limits_{k = 1}^n C(t_k )&{\phi (t_n  - t_k )} = \nonumber \\
+& \begin{bmatrix}
+C(t_1) &  C(t_2) & ... & C(t_n)
+\end{bmatrix}
+ \begin{bmatrix}
+{\phi(t_{n-1})} & {\phi(t_{n-2})} ... {\phi(t_0)}=I
+\end{bmatrix}^T
+\end{align}
+

@@ -1,0 +1,413 @@
+% Bibliography of key references for "LaTeX for Thesis and Large Documents"
+% For use with BibTeX
+
+
+
+
+
+@article{Marais2009,
+title = "Beyond its cost, the value of maintenance: An analytical framework for capturing its net present value",
+journal = "Reliability Engineering and System Safety",
+volume = "94",
+number = "2",
+pages = "644 - 657",
+year = "2009",
+note = "",
+author = "Marais, K. B. and Saleh, J. H.",
+keywords = "Maintenance",
+keywords = "Present value",
+keywords = "Directed graph",
+keywords = "Value trajectory",
+keywords = "Multi-state failure"
+}
+
+
+
+@article{YounesGirgis2005,
+author={Younes, A. and Girgis, M. R.},
+year={2005},
+title={A tool for computing computer network reliability},
+journal={International Journal of Computer Mathematics},
+volume={82},
+issue={12},
+pages={1455-1465}
+}
+
+
+
+
+
+@book{Billinton1994,
+author={  Billinton, R. and  Li, W.},
+year={1994},
+title={Reliability assessment of electric power systems using Monte Carlo methods},
+publisher={Plenum Press},
+address={New York, U.S.A.}
+}
+
+
+@book{ChowdhuryKoval2009 ,
+author={Chowdhury, A. and Koval D.},
+year={2009},
+title={Power Distribution System Reliability: Practical Methods and Applications},
+publisher={IEEE Press},
+address={NJ, USA}
+}
+
+
+
+@article{HowardA,
+author={Howard, R. A.},
+year={1964},
+title={System analysis of semi-markov processes(Systems analysis of semimarkov processes, expressing results in form of matrix flow graph)},
+journal={IEEE transactions on military electronics},
+volume={8},
+pages={114},
+isbn={0536-1559},
+}
+}
+
+@MastersThesis{Gulyas2007,
+    author     =     {Cole.W.Gulyas},
+    title     =     {Stochastic capability models for degrading satellite constellations},
+    school     =     {Air force Institute of Technology},
+    address     =     {Ohio, USA},
+    year     =     {2007}
+}
+
+
+@ARTICLE{Nunn1977,
+title={Semi-Markov Processes: An Introduction},
+author={ Nunn, W. R. and  Desiderio, A. M.},
+journal={Center for  Naval  Analyses},
+year={1977},
+volume={},
+number={},
+pages={1-30}
+ }
+
+
+@article{Caceres1976,
+title = "Process Failure Analysis by Block Diagrams and Fault Trees",
+journal = "Industrial and Engineering Chemistry Fundamentals",
+volume = "15",
+number = "2",
+pages = "128-134",
+year = "1976",
+author = "Caceres, S. and  Henley, E.J."
+}
+
+
+@book{SrinivasanVijayakumar2003,
+author={Srinivasan, S.K. and Vijayakumar, A.},
+year={2003},
+title={Stochastic Point Processes},
+publisher={Narosa Publishing House},
+address={Chennai, India}
+}
+
+%Applied reliability engineering, Volume 2
+% By Marvin L. Roush, Willie M. Webb
+
+
+@article{Yeh1995,
+title = "Calculating the Rate of Occurrence of Failures for Continuous-Time Markov Chains with Application to a Two-Component Parallel System",
+journal = "The Journal of the Operational Research Society",
+volume = "46",
+number = "4",
+pages = "528-536",
+year = "1995",
+author = "Yeh, L.",
+abstract = "In this paper, we assume that a system process is either a continuous-time Markov chain or a higher dimensional Markov process after introducing some supplementary variables. A formula for evaluating the rate of occurrence of failures is derived. As an application, a maintenance model for a two-component parallel system, in which component 1 after repair is not 'as good as new' but component 2 after repair is 'as good as new', is studied."
+}
+
+
+@INPROCEEDINGS{Piaszcyk1999,
+    TITLE = "Accelerator as a repairable system",
+    AUTHOR = "Piaszcyk, C.M.",
+    BOOKTITLE = "Proc. Of the Workshop on Reliability of High Power Proton Accelerators",
+    ADDRESS = "Aix-en-Provence, France",
+    YEAR = "1999"
+}
+
+
+
+@book{BedfordRoger2001,
+author={ Bedford, T. and Roger, M. C.},
+year={2001},
+title={Probabilistic risk analysis: foundations and methods},
+publisher={Cambridge University Press},
+address={Cambridge, UK}
+}
+
+
+
+@book{AscherFeingold1984,
+author={ Ascher, H. and Feingold, H. },
+year={1984},
+title={Repairable systems reliability: modeling, inference, misconceptions and their causes},
+publisher={Marcel Dekker, Inc.},
+address={New York, USA}
+}
+
+
+@book{AnsellPhillips1994,
+author={ Ansell, J. I. and  Phillips, M. J. },
+year={1994},
+title={Practical methods for reliability data analysis},
+publisher={Oxford University Press Inc.},
+address={New York, USA}
+}
+
+
+
+
+@book{TobiasTrindade1995,
+author={Tobias, P.A. and Trindade, D.C.},
+year={1995},
+title={Applied reliability},
+publisher={Chapman and Hall},
+address={London}
+}
+
+
+@book{Thompson1988,
+author={Thompson, W.A., Jr},
+year={1988},
+title={Point process models with applications to safety and reliability},
+publisher={Chapman and Hall},
+address={London}
+}
+
+@book{JanssenManca2007,
+author={Janssen, J. and Manca, R.},
+year={2007},
+title={Semi-Markov Risk Models for Finance, Insurance and Reliability},
+publisher={Springer},
+address={ New York, NY, USA}
+}
+
+
+@book{NIST2010,
+author={NIST/SEMATECH},
+year={2010},
+title={e-Handbook of Statistical Methods},
+publisher={http://www.itl.nist.gov/div898/handbook/},
+address={USA}
+}
+
+@book{Lisnianski2003,
+author={Lisnianski, A. and Levitin, G.},
+year={2003},
+title={Multi-state System Reliability: Assessment, Optimization and Applications},
+publisher={World Scientific},
+address={Singapore}
+}
+
+@book{GavrilovGavrilova2003,
+author={Gavrilov, L. A. and Gavrilova, N. S.},
+year={2003},
+title={Early-life factors modulating lifespan. In: Rattan, S.I.S. (Ed.). Modulating Aging and Longevity},
+publisher={Kluwer Academic Publishers},
+address={Dordrecht, The Netherlands}
+}
+
+@article{Ouhbi2002,
+title = "The rate of occurrence of failures for semi-Markov processes and estimation",
+journal = "Statistics and Probability Letters",
+volume = "59",
+number = "3",
+pages = "245 - 255",
+year = "2002",
+note = "",
+issn = "0167-7152",
+doi = "DOI: 10.1016/S0167-7152(02)00139-6",
+url = "http://www.sciencedirect.com/science/article/B6V1D-46TB42S-3/2/86831bb79322fdcdf2d4109e18af6201",
+author = "Ouhbi, B. and Limnios, N.",
+keywords = "Rate of occurrence of failures",
+keywords = "Semi-Markov process",
+keywords = "Non-parametric estimator",
+keywords = "Asymptotic properties",
+abstract = "
+This paper investigates the rate of occurrence of failures (ROCOF) of finite state semi-Markov systems. Firstly, a formula for evaluating the ROCOF for semi-Markov systems is derived. As a consequence of this result, we derive the ROCOF of Markov systems as well as the ROCOF of the alternating renewal processes and we give their asymptotic values. From the semi-Markov ROCOF formula, we propose a statistical estimator of this function. Finally, the uniform strong consistency and the asymptotic normality of this estimator are obtained."
+}
+
+
+
+
+
+
+@book{HowardB,
+author={Howard, R. A.},
+year={1971},
+title={Dynamic Probabilistic Systems, vol. 1: Markov Models},
+publisher= {John Wiley and  Sons,  Inc.},
+address={New York, USA}
+}
+
+
+
+@book{Oprisan2001,
+author={Limnios, N. and Opris\c{s}an, G.},
+year={2001},
+title={Semi-Markov Processes and Reliability},
+publisher={Birkh\"{a}user },
+address={Boston, USA }
+}   
+
+
+
+
+
+
+@book{Patrick2002,
+author={ O'Connor, P.},
+year={2002},
+title={Practical Reliability Engineering},
+publisher={John Wiley and Sons},
+address={New York, USA}
+}
+
+
+@book{Modarres2006,
+author={M. Modarres},
+year={2006},
+title={Risk analysis in engineering: techniques, tools, and trends},
+publisher={CRC Press},
+address={ FL, USA}
+}
+
+
+
+@book{Modarres1999,
+author={M. Modarres and M. Kaminskiy and V. Krivtsov},
+year={1999},
+title={Reliability Engineering and Risk Analysis: A Practical Guide},
+publisher={CRC Press},
+address={ FL, USA}
+}
+
+@book{Rausand2004,
+author={M. Rausand and A. H$\o$yland},
+year={2004},
+title={System Reliability Theory},
+publisher={Wiley-IEEE},
+address={San Francisco, CA}
+}
+
+
+
+@article{Vesely1993,
+title={Quantifying maintenance effects on unavailability and risk using Markov
+Modeling},
+author={ Vesely, W. E.},
+journal={Reliability Engineering and System Safety},
+year={1993},
+volume={41},
+pages={177-187}
+}
+
+
+@INPROCEEDINGS{Tomasevicz2006,
+author={Tomasevicz, C.L. and Asgarpoor, S.},
+year={2006},
+title={Preventive Maintenance Using Continuous-Time Semi-Markov Processes},
+booktitle={Proceedings of the 38th North American Power Symposium},
+address={ Carbondale, USA.  },
+pages={3-8}
+}
+
+@Techreport{NUREG3869,
+  author  = "Simonen, F. A. and Woo, H. H.",
+  title   = "{Analyses of the impact of in-service inspection using a Piping Reliability Model}",
+ institution = "US Nuclear Regulatory Commission",
+ year      = "1984",
+}
+
+
+
+
+@article{Silva2010,
+title={Probabilistic Methodologies for Determining the Optimal Number of Substation Spare Transformers},
+author={ da Silva, A.M.L. And de Carvalho Costa, J.G. And Chowdhury, A.A. },
+journal={IEEE Transactions on Power Systems},
+year={2010},
+volume={25},
+issue={1},
+pages={68-77}
+}
+
+
+
+@article{Marseguerra2005325,
+title = "Multiobjective spare part allocation by means of genetic algorithms and Monte Carlo simulation",
+journal = "Reliability Engineering $\&$ System Safety",
+volume = "87",
+number = "3",
+pages = "325 - 335",
+year = "2005",
+note = "",
+issn = "0951-8320",
+doi = "DOI: 10.1016/j.ress.2004.06.002",
+url = "http://www.sciencedirect.com/science/article/B6V4T-4D4PSCX-1/2/44c72f64a8ae1fa2bde2b9704076c812",
+author = "Marzio Marseguerra and Enrico Zio and Luca Podofillini",
+keywords = "Genetic algorithms",
+keywords = "Monte Carlo simulation",
+keywords = "Multi-component system",
+keywords = "Multi-objective optimisation"
+}
+
+
+@article{Berlin1985,
+	author	=	"G. N. Berlin",
+	title	=	"Managing the variability of fire behavior",
+	journal =   "Fire Technology",
+	volume  =	16,
+	number	=	4,
+	pages   =   "287--302",
+	year	=	1985}
+
+@article{Watts1986127,
+title = "Dealing with uncertainty: Some applications in fire protection engineering",
+journal = "Fire Safety Journal",
+volume = "11",
+number = "1-2",
+pages = "127 -- 134",
+year = "1986",
+note = "",
+issn = "0379-7112",
+author = "John M. Watts"
+}
+
+
+@article{Yasaburo1985,
+  title={A Stochastic Model of Fire Spread},
+  author={Yasaburo Morishita},
+  journal={Fire Science and Technology},
+  volume={5},
+  number={1},
+  pages={1-10},
+  year={1985}
+}
+
+
+@article{Williamson1981,
+  title={Coupling Deterministic and Stochastic Modeling to Unwanted Fire},
+  author={Williamson, R. B.},
+  journal={Fire Safety},
+  volume={3},
+  number={4},
+  pages={243--259},
+  year={1981}
+}
+
+
+@InCollection{Watts2004,
+  author     = 	 {D. Rasbash and G. Ramachandran and B. Kandola and J. Watts and M. Law},
+  title      = 	 {Stochastic fire risk modeling},
+  booktitle  = 	 {Evaluation of fire safety},
+  pages      =	 {399--420},
+  publisher  =	 {John Wiley and Sons},
+  year       =	 2004
+}
+

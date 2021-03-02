@@ -1,0 +1,51 @@
+\section{The Semi-Markov Process Model}
+\label{sec:SMPModel}
+This project follows the general formulation of the continuous-time discrete-state semi-Markov process model as developed in \cite{HowardA} and \cite{HowardB}. 
+
+Let the model have $N$ states. Let $f_{ij}(t)$ and $F_{ij}(t)$ represent the   $pdf$ and $cdf$ respectively of the event corresponding to the transition from state $i$ to state $j$ at time $t$. 
+
+Assume that the process is in state $i$. From this state, there could be $k$ different states to which the process could transit to in a single step. Also assumed in this model is that all these $k$ possibilities are independent of the occurrence of each other. At a time instant $t$, the process chooses only one state from these choices such that the time to be spent in the current state $i$ is the minimum before instantaneously jumping to the chosen state. The probability that the next state is $j$ and not any other state $k$ reachable from $i$ is given by:
+\begin{align}
+\label{eq:CompRisk}
+c_{ij}(t) =  f_{ij} (t)\prod\limits_{k \ne j} {(1 - F_{ik} (t))} 
+\end{align}
+For $N$=2, $c_{ij}(t) =  f_{ij} (t)$. The matrix $C(t)=[ c_{ij}(t) ]$ is called the kernel or core of the semi-Markov process model and
+\begin{align}
+\label{eq:waiting}
+w_i(t) = \sum\limits_{j=1}^{N}{c_{ij}(t)}
+\end{align}
+is called the waiting time distribution for the state $i$. It represents the probability that the process waits in state $i$ for $t$ time units before making a transition. Hence it is an unconditional probability distribution. 
+It is assumed that any row $i$ of the kernel $C=[c_{ij}]$ satisfies the condition:
+\begin{eqnarray}
+\int\limits_0^\infty  { \sum\limits_{j}^{}{c_{ij}(t)} dt \approx 1} 
+\label{eq:MREAssumption}
+\end{eqnarray}
+This assumption assures that there is unit probability that the process
+will be in one of the $N$ states of the process at time $t$, given the initial 
+state as $i$. The probability that the process does not leave state $i$ by time $t$ is given by:
+\begin{align}
+\label{eq:staying}
+W_i (t) = 1 - \int\limits_0^t {w_i(t)dt} 
+\end{align}
+The objective of the model is to determine the probability $\phi_{ij}(t)$  of being in each state  $j$ given that the process initially is in a particular state $i$. $\phi_{ij}(t)$  can be determined by solving a system of integral equations:
+\begin{align}
+{\phi _{ij} (t)} = \delta _{ij} W_i (t) + \sum\limits_k {\int\limits_0^t {c_{ik} (\tau ){\phi _{kj} (t - \tau )}d\tau } } 
+\label{CTMRE}
+\end{align}
+Where $i=j=k=0,1,2,...N-1$.	 
+
+
+The right hand side of Equation \ref{CTMRE} describes the following probabilities:
+\begin{enumerate}
+\item	$i=j$ and second term=0: $W_i (t)$ is the probability that the process does not leave state $i$ by time $t$.
+\item	$i=j$ and second term not 0: process leaves state $i$ and returns to $i$ by time $t$.
+\item	$i \neq j$  and second term $\neq j$ : process leaves state $i$ and reaches state $j$ by time $t$.
+\end{enumerate}
+The system of equations can alternatively be written in a compact form as a matrix:
+\begin{align}
+{\phi(t)} = diag(W(t)) + {\int\limits_0^t {C(\tau ){\phi (t - \tau )}d\tau } } 
+\label{MatMRE}
+\end{align}
+
+
+

@@ -1,0 +1,27 @@
+digraph {
+ graph [ rankdir="TB" ordering=out];
+
+rank = same {
+4[label=" " texlbl="$\begin{matrix}N, n \\ \text{State }n+1  \end{matrix}$"];
+3[label=" " texlbl="$\begin{matrix}N, n-1 \\ \text{State }n \end{matrix}$"];
+2[label=" " texlbl="$\begin{matrix}N, n-2 \\ \text{State }n-1 \end{matrix}$"];
+1[label=" " texlbl="$\begin{matrix}N, 0 \\ \text{State }1 \end{matrix}$"];
+}
+0[label=" " texlbl="$\begin{matrix}N-1, 0 \\ \text{State }0 \\ r_{00} \end{matrix}$" style=filled color=lightgray];
+
+edge [lblstyle="right" topath="bend right"];
+1->0[label = " "  style="thick"];
+
+edge [lblstyle="below" topath="bend left"];
+
+4->3[label = " "  style="thick"];
+3->2[label = " "  style="thick"];
+2->1[label = " " texlbl="" style="dashed"];
+
+1->2[label = " " texlbl="" style="dashed"];
+2->3[label = " " texlbl="$C_r$" style="thick"];
+3->4[label = " " texlbl="$C_r$" style="thick"];
+
+edge [lblstyle="right" topath="bend right"];
+0->1[label = " " texlbl="$C_r$" style="thick"];
+

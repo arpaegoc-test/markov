@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}The Semi-Markov Process Model}{6}
+\contentsline {section}{\numberline {3}Results}{8}
+\contentsline {subsection}{\numberline {3.1}What if variability is ignored?}{10}
+\contentsline {section}{\numberline {4}Applications}{11}
+\contentsline {section}{\numberline {5}Conclusions}{11}

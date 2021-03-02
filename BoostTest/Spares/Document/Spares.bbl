@@ -1,0 +1,38 @@
+\begin{thebibliography}{1}
+
+\bibitem{Silva2010}
+A.~da~Silva, J.~de~Carvalho~Costa, and A.~Chowdhury, ``Probabilistic
+  methodologies for determining the optimal number of substation spare
+  transformers,'' {\em IEEE Transactions on Power Systems}, vol.~25,
+  pp.~68--77, 2010.
+
+\bibitem{Marseguerra2005325}
+M.~Marseguerra, E.~Zio, and L.~Podofillini, ``Multiobjective spare part
+  allocation by means of genetic algorithms and monte carlo simulation,'' {\em
+  Reliability Engineering $\&$ System Safety}, vol.~87, no.~3, pp.~325 -- 335,
+  2005.
+
+\bibitem{HowardA}
+R.~A. Howard, ``System analysis of semi-markov processes(systems analysis of
+  semimarkov processes, expressing results in form of matrix flow graph),''
+  {\em IEEE transactions on military electronics}, vol.~8, p.~114, 1964.
+
+\bibitem{HowardB}
+R.~A. Howard, {\em Dynamic Probabilistic Systems, vol. 1: Markov Models}.
+\newblock New York, USA: John Wiley and Sons, Inc., 1971.
+
+\bibitem{Lisnianski2003}
+A.~Lisnianski and G.~Levitin, {\em Multi-state System Reliability: Assessment,
+  Optimization and Applications}.
+\newblock Singapore: World Scientific, 2003.
+
+\bibitem{Gulyas2007}
+Cole.W.Gulyas, ``Stochastic capability models for degrading satellite
+  constellations,'' Master's thesis, Air force Institute of Technology, Ohio,
+  USA, 2007.
+
+\bibitem{Nunn1977}
+W.~R. Nunn and A.~M. Desiderio, ``Semi-markov processes: An introduction,''
+  {\em Center for Naval Analyses}, pp.~1--30, 1977.
+
+\end{thebibliography}

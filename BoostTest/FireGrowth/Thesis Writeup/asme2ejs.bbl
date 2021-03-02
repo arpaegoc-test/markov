@@ -1,0 +1,41 @@
+\begin{thebibliography}{1}
+
+\bibitem{Watts1986127}
+Watts, J.~M., 1986.
+\newblock ``Dealing with uncertainty: Some applications in fire protection
+  engineering''.
+\newblock {\em Fire Safety Journal, {\bf 11}}(1-2), pp.~127 -- 134.
+
+\bibitem{Yasaburo1985}
+Morishita, Y., 1985.
+\newblock ``A stochastic model of fire spread''.
+\newblock {\em Fire Science and Technology, {\bf 5}}(1), pp.~1--10.
+
+\bibitem{Williamson1981}
+Williamson, R.~B., 1981.
+\newblock ``Coupling deterministic and stochastic modeling to unwanted fire''.
+\newblock {\em Fire Safety, {\bf 3}}(4), pp.~243--259.
+
+\bibitem{Watts2004}
+Rasbash, D., Ramachandran, G., Kandola, B., Watts, J., and Law, M., 2004.
+\newblock ``Stochastic fire risk modeling''.
+\newblock In {\em Evaluation of fire safety}. John Wiley and Sons,
+  pp.~399--420.
+
+\bibitem{Berlin1985}
+Berlin, G.~N., 1985.
+\newblock ``Managing the variability of fire behavior''.
+\newblock {\em Fire Technology, {\bf 16}}(4), pp.~287--302.
+
+\bibitem{HowardA}
+Howard, R.~A., 1964.
+\newblock ``System analysis of semi-markov processes(systems analysis of
+  semimarkov processes, expressing results in form of matrix flow graph)''.
+\newblock {\em IEEE transactions on military electronics, {\bf 8}}, p.~114.
+
+\bibitem{HowardB}
+Howard, R.~A., 1971.
+\newblock {\em Dynamic Probabilistic Systems, vol. 1: Markov Models}.
+\newblock John Wiley and Sons, Inc., New York, USA.
+
+\end{thebibliography}

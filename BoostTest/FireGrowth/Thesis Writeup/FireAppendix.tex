@@ -1,0 +1,37 @@
+\section*{Appendix A: Implementation issues}
+\label{sec:FireImplementation}
+
+Equation \ref{MatMRE} can be evaluated by direct numerical integration or using Laplace transforms method. Most distributions do not possess a closed form Laplace transform. \cite{Gulyas2007} in a thesis dissertation employed a transform approximation method (TAM) to evaluate the Laplace transform of Weibull distribution and then numerically evaluated its Laplace inversion. In this project, we resort to the direct numerical integration technique.
+
+Equation \ref{eq:staying} is computationally expensive if the integral has to be evaluated for each $t$. Instead, it can be computed as a recurrence relation as follows:
+\begin{align}
+W_i(t_n)=\begin{cases}
+1 - \int_0 ^ {\Delta t} {w_i(t_n) dt} & n=1 \\
+W_i(t_{n-1}) -\int_{t_{n-1}}^{t_n} { w_i(t) dt}    & n > 1
+\end{cases}
+\end{align}
+
+
+Where, by trapezoidal rule, we have:
+\begin{align}
+\int_{t_{n-1}}^{t_n} {w_i(t)}dt = \frac{\Delta t}{2}\{  w_i(t_{n-1}) + w_i(t_n)  \} 
+\end{align}
+
+To solve the system of integral equations, \cite{Nunn1977} derived the following recurrence relation based on trapezoidal rule by distributing $t$ on a set of equally spaced points in the interval $[0,t]$:
+\begin{eqnarray}
+{\phi (t_n )} = [I - \frac{{\Delta t}}{2}C(0)]^{ - 1} [diag(W(t_n )) + \nonumber \\
+\Delta t\sum\limits_{k = 1}^n {C(t_k ){\phi (t_n  - t_k )}}  - \frac{{\Delta t}}{2}C(t_n ){\phi (0)}]
+\label{TrapCTMRE}
+\end{eqnarray}
+Where $\Delta t = t_n - t_{n-1}$. The solution is started with ${\phi(0)} = W(0) = I$.
+
+The convolution operation in the above equation involves repeated addition and multiplication of matrices thus slowing down the computations as $n$ grows. With sufficiently large storage space, the following technique for convolution improves the speed:
+\begin{align}
+\sum\limits_{k = 1}^n C(t_k )&{\phi (t_n  - t_k )} = \nonumber \\
+& \begin{bmatrix}
+C(t_1) &  C(t_2) & ... & C(t_n)
+\end{bmatrix}
+ \begin{bmatrix}
+{\phi(t_{n-1})} & {\phi(t_{n-2})} ... {\phi(t_0)}=I
+\end{bmatrix}^T
+\end{align}

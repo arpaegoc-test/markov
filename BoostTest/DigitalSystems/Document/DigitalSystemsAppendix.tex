@@ -1,0 +1,91 @@
+\appendix
+
+
+
+\section{Closed form solution for $W_i(t)$}
+
+In this appendix, it is proved that a semi-Markov process model's kernel can be
+entirely built using poly-Weibull distribution.
+
+Let transition from a state $i$ to a state $j$ follow a poly-Weibull distribution
+made of a mixture of $n$ Weibull distributions. If $n=1$, distribution
+is a regular Weibull distribution. 
+
+
+Consider a row $i$ whose entries represent  a competing risk situation, then for $1 \le j,k \le N$,
+
+
+$\int\limits_0^t {\displaystyle\sum\limits_j {c_{ij} (t)dt} }$
+\begin{align}
+=& \int\limits_0^t{\sum\limits_j {[f_{ij}(t)\prod\limits_{k\ne j}{(1-F_{ik}(t))}]} dt} \nonumber \\
+=&\int\limits_0^t {\sum\limits_j{[ \displaystyle\sum_{p=1}^{m_{ij}}(\lambda_{ijp} \gamma_{ijp}) (\lambda_{ijp}t)^{\gamma_{ijp}-1} e^{-\displaystyle\sum\limits_{k}\sum\limits_{q=1}^{m_{ik}}{(\lambda_{ikq}t)^{\gamma_{ikq}}}}   ]} dt} \nonumber \\
+=&-e^{-X} + 1
+\label{eqn:PolyWblIntegral}
+\end{align}
+where
+\begin{align}
+X =& \sum_{k}\sum_{q=1}^{m_{ik}}{(\lambda_{ikq}t)^{\gamma_{ikq}}}  \text{ so that} \nonumber \\
+dX =& \sum_k\displaystyle\sum_{q=1}^{m_{ik}}(\lambda_{ijq} \gamma_{ijq}) (\lambda_{ijq}t)^{\gamma_{ijq}-1}dt \nonumber
+\end{align}
+
+The $W_i(t)$ in Integral Equation \ref{CTMRE} based on Equation \ref{eq:staying} is computed as
+\begin{align}
+W_i(t) = 1-(\ref{eqn:PolyWblIntegral})  = e^{-X} = e^{-\displaystyle\sum_{k}\sum_{q=1}^{m_{ik}}{(\lambda_{ikq}t)^{\gamma_{ikq}}}}
+\label{eq:PolyWblStaying}
+\end{align}
+This simplified expression for $W_i(t)$ aids in fast computation of the state probabilities in the presence of
+numerous competing risk situations.
+It remains to plug-in both the matrices $C(t)$ and $W(t)$ and evaluate the state probabilities
+recursively using Equation \ref{MatMRE} by applying the trapezoidal rule in Equation \ref{TrapCTMRE}.
+
+
+
+\section{Implementation issues}
+\label{sec:PipingImplementation}
+
+Equation \ref{MatMRE} can be evaluated by direct numerical integration or using Laplace transforms method. Most distributions do not possess a closed form Laplace transform. \cite{Gulyas2007} in a thesis dissertation employed a transform approximation method (TAM) to evaluate the Laplace transform of Weibull distribution and then numerically evaluated its Laplace inversion. In this paper, we resort to the direct numerical integration technique since we assume that we do not know the degradation distribution beforehand.
+
+Equation \ref{eq:staying} is computationally expensive if the integral has to be evaluated for each $t$. Instead, it can be computed as a recurrence relation as follows:
+
+\begin{align}
+W_i(t_n)=\begin{cases}
+1 - \int_0 ^ {\Delta t} {w_i(t_n) dt} & n=1 \\
+W_i(t_{n-1}) -\int_{t_{n-1}}^{t_n} { w_i(t) dt}    & n > 1
+\end{cases}
+\end{align}
+
+
+Where, by trapezoidal rule, we have:
+
+\begin{align}
+\int_{t_{n-1}}^{t_n} {w_i(t)}dt = \frac{\Delta t}{2}\{  w_i(t_{n-1}) + w_i(t_n)  \} 
+\end{align}
+
+However, when all the failure/repair distributions follow Weibull distribution with scale $\lambda_{ik}$  and shape $\gamma_{ik}$, $W_i(t)$ reduces to a closed form as seen in the above Appendix:
+
+\begin{align}
+W_i(t) =  e^{-\sum\limits_{k}{(\lambda_{ik}t)^{\gamma_{ik}}}}
+\end{align}
+
+To solve the system of integral equations, \cite{Nunn1977} derived the following recurrence relation based on trapezoidal rule by distributing $t$ on a set of equally spaced points in the interval $[0,t]$:
+
+\begin{eqnarray}
+{\phi (t_n )} = [I - \frac{{\Delta t}}{2}C(0)]^{ - 1} [diag(W(t_n )) + \nonumber \\
+\Delta t\sum\limits_{k = 1}^n {C(t_k ){\phi (t_n  - t_k )}}  - \frac{{\Delta t}}{2}C(t_n ){\phi (0)}]
+\label{TrapCTMRE}
+\end{eqnarray}
+
+Where $\Delta t = t_n - t_{n-1}$. The solution is started with ${\phi(0)} = W(0) = I$.
+
+The convolution operation in the above equation involves repeated addition and multiplication of matrices thus slowing down the computations as $n$ grows. With sufficiently large storage space, the following technique for convolution improves the speed:
+
+\begin{align}
+\sum\limits_{k = 1}^n C(t_k )&{\phi (t_n  - t_k )} = \nonumber \\
+& \begin{bmatrix}
+C(t_1) &  C(t_2) & ... & C(t_n)
+\end{bmatrix}
+ \begin{bmatrix}
+{\phi(t_{n-1})} & {\phi(t_{n-2})} ... {\phi(t_0)}=I
+\end{bmatrix}^T
+\end{align}
+

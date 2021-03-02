@@ -1,0 +1,18 @@
+function SMPMonteCarlo()
+clc;
+clear;
+TestMCComponent();
+
+
+
+function TestMCComponent()
+    Z = load(cell2mat({'Component.dat'}));
+    t = Z(:,1);
+    plot(t, Z(:,2));
+    hold on;
+    
+function TestSMPComponent()    
+    Z = load(cell2mat({'..\\HenleyTest\\matla.dat'}));
+    t = Z(:,1);
+    plot(t, Z(:,2));
+

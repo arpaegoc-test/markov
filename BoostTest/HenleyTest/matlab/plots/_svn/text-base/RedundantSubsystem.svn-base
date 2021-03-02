@@ -1,0 +1,18 @@
+digraph  {
+graph [
+rankdir="RL"  ];
+0[label=" " texlbl="$\begin{matrix}0 \\ 00 \end{matrix}$" style=filled color=lightgrey];
+1[label=" " texlbl="$\begin{matrix}1 \\ 10,01 \end{matrix}$"];
+2[label=" " texlbl="$\begin{matrix}2 \\ 11 \end{matrix}$"];
+
+edge [lblstyle="auto",topath="bend left"];
+
+subgraph cluster1 {
+color=white;
+1 -> 0[label="(30, 0.3)"];
+1 -> 2[label="(0.5, 1)"];
+};
+
+0 -> 1[label="2(0.5, 1)"];
+2 -> 1[label="2(30, 0.3)"];
+}

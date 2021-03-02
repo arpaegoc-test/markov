@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage[x11names, rgb]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{snakes,arrows,shapes}
+\usepackage{amsmath}
+%
+%
+
+%
+
+%
+
+\begin{document}
+\pagestyle{empty}
+%
+%
+%
+
+\enlargethispage{100cm}
+% Start of code
+\begin{tikzpicture}[>=latex',line join=bevel,]
+%%
+\node (1) at (207bp,106bp) [draw,ellipse] {$\begin{matrix}12, 0 \\ \text{State }1 \end{matrix}$};
+  \node (0) at (207bp,18bp) [draw=lightgray,fill=lightgray,ellipse] {$\begin{matrix}11, 0 \\ \text{State }0 \end{matrix}$};
+  \node (3) at (27bp,106bp) [draw,ellipse] {$\begin{matrix}12, 2 \\ \text{State }3 \end{matrix}$};
+  \node (2) at (117bp,106bp) [draw,ellipse] {$\begin{matrix}12, 1 \\ \text{State }2 \end{matrix}$};
+  \draw [->,thick] (1) to[bend right] node[right] {$12\lambda$} (0);
+  \draw [->,thick] (2) to[bend left] node[above] {$12\lambda$} (1);
+  \draw [->,thick] (1) to[bend left] node[above] {$2\mu$} (2);
+  \draw [->,thick] (3) to[bend left] node[above] {$12\lambda$} (2);
+  \draw [->,thick] (2) to[bend left] node[above] {$\mu$} (3);
+%
+\end{tikzpicture}
+% End of code
+
+%
+\end{document}
+%
+
+
+

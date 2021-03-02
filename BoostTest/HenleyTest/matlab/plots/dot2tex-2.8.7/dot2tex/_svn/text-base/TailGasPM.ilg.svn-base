@@ -1,0 +1,39 @@
+This is C:\Program Files\MiKTeX 2.7\miktex\bin\makeindex.exe, version 2.14 [02-Oct-2002] (kpathsea + Thai support).
+Scanning input file E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot...
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 1):
+   -- Unknown index keyword digraph.
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 2):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 3):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 5):
+   -- Unknown index keyword rank=same.
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 6):
+   -- Unknown index keyword 3[label=""weight=boldtexlbl="$\begin.
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 7):
+   -- Unknown index keyword 2[label=""texlbl="$\begin.
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 8):
+   -- Unknown index keyword 0[label=""texlbl="$\begin.
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 9):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 11):
+   -- Unknown index keyword 1[label=""texlbl="$\begin.
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 13):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 14):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 16):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 17):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 18):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 21):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 22):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.dot, line = 23):
+   -- Missing arguments -- need two (premature LFD).
+done (0 entries accepted, 17 rejected).
+Nothing written in E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.ind.
+Transcript written in E:\Civil-7\Research\multi-state\Proposal\Chapter 5 - SMP\VCProjects\BoostTest\BoostTest\HenleyTest\matlab\plots\dot2tex-2.8.7\dot2tex\TailGasPM.ilg.
